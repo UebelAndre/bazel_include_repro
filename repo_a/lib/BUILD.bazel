@@ -1,0 +1,22 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+cc_library(
+    name = "repo_a",
+    srcs = [
+        "repo_a.cc",
+    ],
+    hdrs = [
+        "repo_a.h",
+    ],
+    deps = [
+        "@repo_b//lib:repo_b",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "repo_test",
+    srcs = ["repo_test.cc"],
+    deps = [":repo_a"],
+    visibility = ["//visibility:public"],
+)

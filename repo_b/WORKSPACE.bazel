@@ -1,0 +1,6 @@
+workspace(name = "repo_b")
+
+local_repository(
+    name = "repo_c",
+    path = "../repo_c",
+)

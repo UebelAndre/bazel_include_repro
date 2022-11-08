@@ -1,0 +1,16 @@
+workspace(name = "bazel_include_repro")
+
+local_repository(
+    name = "repo_a",
+    path = "./repo_a",
+)
+
+local_repository(
+    name = "repo_c",
+    path = "./repo_c",
+)
+
+local_repository(
+    name = "repo_b",
+    path = "./repo_b",
+)

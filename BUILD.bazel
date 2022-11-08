@@ -1,0 +1,8 @@
+test_suite(
+    name = "test_suite",
+    tests = [
+        "@repo_a//lib:repo_test",
+        "@repo_b//lib:repo_test",
+        "@repo_c//lib:repo_test",
+    ],
+)
