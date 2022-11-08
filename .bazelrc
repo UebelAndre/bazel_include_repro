@@ -1,0 +1,1 @@
+build --per_file_copt=external/repo_a/.*,external/repo_b/.*,external/repo_c/.*@-I.
