@@ -59,3 +59,7 @@ FAILED: Build did NOT complete successfully
 ```
 
 Note that the issue is also reproducible on Linux.
+
+## Upstream Issue
+
+https://github.com/bazelbuild/bazel/issues/16690
